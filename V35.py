@@ -36,7 +36,7 @@ import sys
 
 class MongoDatabase():
     def __init__(self):
-        self.Client = MongoClient("mongodb+srv://ElectronicBook:ZQh9jpipE61KSC2k@e-book.ureivfq.mongodb.net/?retryWrites=true&w=majority")
+        self.Client = MongoClient("")
         self.ChatDB = self.Client["ChatDatabase"]
         self.ChatDB_TEXT = self.ChatDB["TextDatabase"]
         self.ChatDB_PHOTO = self.ChatDB["PhotoDatabase"]
